@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<div class="alert alert-info" role="alert">
+    Items were added successfully.  <a href="/home" class="alert-link">Click here</a> to go back to home.
+  </div>
+
+  <br>
+  <br>
+
+  <ul class="list-group">
+    <li class="list-group-item active">Items</li>
+    <% allItems.forEach(element => { %>
+        <li class="list-group-item"> <%= element %>  </li>
+    <% }) %>
+  </ul>
